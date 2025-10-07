@@ -17,3 +17,10 @@ resource "aws_subnet" "my_subnet" {
     Name = "my-public-subnet"
   }
 }
+# 3️⃣ Create an Internet Gateway
+resource "aws_internet_gateway" "my_igw" {
+  vpc_id = aws_vpc.my_vpc.id
+  tags = {
+    Name = "my-internet-gateway"
+  }
+}
