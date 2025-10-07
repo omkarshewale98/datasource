@@ -15,6 +15,7 @@ resource "aws_subnet" "my_subnet" {
   map_public_ip_on_launch = true
   tags = {
     Name = "my-public-subnet"
+    #
   }
 }
 # 3️⃣ Create an Internet Gateway
