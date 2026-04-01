@@ -26,6 +26,3 @@ resource "aws_internet_gateway" "my_igw" {
     Name = "my-internet-gateway"
   }
 }
-resource "aws_vpc" "my_vpc"{
-  vpc_id = aws_vpc.my_vpc.id
-}
